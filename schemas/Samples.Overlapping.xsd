@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema
+  id="samples.overlapping"
+  targetNamespace="http://yeahcat.cn/wfc/samples"
+  xmlns="http://yeahcat.cn/wfc/samples"
+  xmlns:models="http://yeahcat.cn/wfc/models"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+>
+  <xs:import
+    schemaLocation="Models.Heuristic.xsd"
+    namespace="http://yeahcat.cn/wfc/models"
+  />
+  <xs:element name="Overlapping">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="N" type="xs:int" default="3" />
+      <xs:attribute name="periodic" type="xs:boolean" default="false" />
+      <xs:attribute name="size" type="xs:int" default="48" />
+      <xs:attribute name="screenshots" type="xs:int" default="2" />
+      <xs:attribute name="symmetry" type="xs:int" default="8" />
+      <xs:attribute name="ground" type="xs:boolean" default="false" />
+      <xs:attribute name="periodicInput" type="xs:boolean" default="true" />
+      <xs:attribute name="heuristic" type="models:Heuristic" />
+      <xs:attribute name="limit" type="xs:int" default="-1" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

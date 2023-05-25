@@ -1,6 +1,7 @@
 ﻿// Copyright (C) 2016 Maxim Gumin, The MIT License (MIT)
 
 using System;
+using Schema;
 
 abstract class Model
 {
@@ -23,7 +24,7 @@ abstract class Model
     double sumOfWeights, sumOfWeightLogWeights, startingEntropy;
     protected double[] sumsOfWeights, sumsOfWeightLogWeights, entropies;
 
-    public enum Heuristic { Entropy, MRV, Scanline };
+    // public enum Heuristic { Entropy, MRV, Scanline };
     Heuristic heuristic;
 
     protected Model(int width, int height, int N, bool periodic, Heuristic heuristic)

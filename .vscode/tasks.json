@@ -2,9 +2,34 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "schema:samples",
+      "command": "xsd",
+      "type": "process",
+      "options": {
+        "cwd": "${workspaceFolder}/schemas"
+      },
+      "args": [
+        "Samples.xsd",
+        "Models.xsd",
+        "/c",
+        "/n:Schema",
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "schema",
+      "dependsOn": [
+        "schema:samples"
+      ],
+      "problemMatcher": []
+    },
+    {
       "label": "build",
       "command": "dotnet",
       "type": "process",
+      "dependsOn": [
+        "schema"
+      ],
       "args": [
         "build",
         "${workspaceFolder}/WaveFunctionCollapse.csproj",

@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema
+  id="samples"
+  targetNamespace="http://yeahcat.cn/wfc/samples"
+  xmlns="http://yeahcat.cn/wfc/samples"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+>
+  <xs:import
+    schemaLocation="Models.Heuristic.xsd"
+    namespace="http://yeahcat.cn/wfc/models"
+  />
+  <xs:include schemaLocation="Samples.Overlapping.xsd" />
+  <xs:include schemaLocation="Samples.SimpleTiled.xsd" />
+  <xs:element name="Samples" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Overlapping">
+        </xs:element>
+        <xs:element ref="SimpleTiled">
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
