@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema
+  id="tileset"
+  targetNamespace="http://yeahcat.cn/wfc/tileset"
+  xmlns="http://yeahcat.cn/wfc/tileset"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+>
+  <xs:include schemaLocation="TileSet.Tile.xsd" />
+  <xs:include schemaLocation="TileSet.Neighbor.xsd" />
+  <xs:element name="TileSet" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="tiles" msdata:IsDataSet="true">
+          <xs:complexType>
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+              <xs:element ref="Tile" />
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="neighbors" msdata:IsDataSet="true">
+          <xs:complexType>
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+              <xs:element ref="Neighbor" />
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

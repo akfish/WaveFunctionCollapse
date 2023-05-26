@@ -46,6 +46,8 @@ The simplest nontrivial case of the algorithm is when NxN=1x2 (well, NxM). If we
 Lists of all the possible pairs of adjacent tiles in practical tilesets can be quite long, so I implemented a symmetry system for tiles to shorten the enumeration. In this system each tile should be assigned with its symmetry type.
 <p align="center"><img alt="symmetries" src="images/symmetry-system.png"></p>
 
+> Note: in this fork, the `\` symmetry is renamed to `D(iagonal)` for code generation.
+
 Note that the tiles have the same symmetry type as their assigned letters (or, in other words, actions of the 
 dihedral group D4 are isomorphic for tiles and their corresponding letters). With this system it's enough to enumerate pairs of adjacent tiles only up to symmetry, which makes lists of adjacencies for tilesets with many symmetrical tiles (even the summer tileset, despite drawings not being symmetrical the system considers such tiles to be symmetrical) several times shorter.
 <p align="center">

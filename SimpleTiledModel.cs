@@ -70,7 +70,7 @@ class SimpleTiledModel : Model
                 a = i => 1 - i;
                 b = i => i;
             }
-            else if (sym == '\\')
+            else if (sym == '\\' || sym == 'D')
             {
                 cardinality = 2;
                 a = i => 1 - i;

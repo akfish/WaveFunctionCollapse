@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema
+  id="tileset.tile"
+  targetNamespace="http://yeahcat.cn/wfc/tileset"
+  xmlns="http://yeahcat.cn/wfc/tileset"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+>
+  <xs:include schemaLocation="TileSet.Symmetry.xsd" />
+  <xs:element name="Tile">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="symmetry" type="TileSymmetry" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

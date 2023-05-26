@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema
+  id="tileset.neighbor"
+  targetNamespace="http://yeahcat.cn/wfc/tileset"
+  xmlns="http://yeahcat.cn/wfc/tileset"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+>
+  <xs:element name="Neighbor">
+    <xs:complexType>
+      <xs:attribute name="left" type="xs:string" />
+      <xs:attribute name="right" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
