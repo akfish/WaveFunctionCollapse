@@ -2,7 +2,16 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "schema:samples",
+      "label": "schema:clean",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/schemas"
+      },
+      // Check if no *.cs files exist, otherwise delete them
+      "command": "(( $(ls -1 *.cs | wc -l) == 0 )) || (rm *.cs)",
+    },
+    {
+      "label": "schema:generate",
       "command": "xsd",
       "type": "process",
       "options": {
@@ -11,15 +20,40 @@
       "args": [
         "Samples.xsd",
         "Models.xsd",
+        "TileSet.xsd",
         "/c",
         "/n:Schema",
       ],
       "problemMatcher": []
     },
     {
+      "label": "schema:ensure-single-file",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/schemas"
+      },
+      "command": "(( $(ls -1 *.cs | wc -l) == 1 )) || (echo \"Expected 1 file, found $(ls -1 *.cs | wc -l)\" && exit 1)",
+    },
+    {
+      "label": "schema:rename",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/schemas"
+      },
+      "command": "mv",
+      "args": [
+        "*.cs",
+        "schema.generated.cs",
+      ],
+    },
+    {
       "label": "schema",
+      "dependsOrder": "sequence",
       "dependsOn": [
-        "schema:samples"
+        "schema:clean",
+        "schema:generate",
+        "schema:ensure-single-file",
+        "schema:rename"
       ],
       "problemMatcher": []
     },
