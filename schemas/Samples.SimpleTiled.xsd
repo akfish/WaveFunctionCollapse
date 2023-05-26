@@ -11,17 +11,16 @@
     schemaLocation="Models.Heuristic.xsd"
     namespace="http://yeahcat.cn/wfc/models"
   />
+  <xs:include schemaLocation="Samples.SampleBase.xsd" />
   <xs:element name="SimpleTiled">
     <xs:complexType>
-      <xs:attribute name="name" type="xs:string" />
-      <xs:attribute name="size" type="xs:int" default="24" />
-      <xs:attribute name="heuristic" type="models:Heuristic" />
-      <xs:attribute name="subset" type="xs:string" />
-      <xs:attribute name="periodic" type="xs:boolean" default="false" />
-      <xs:attribute name="screenshots" type="xs:int" default="2" />
-      <xs:attribute name="limit" type="xs:int" default="-1" />
-      <xs:attribute name="blackBackground" type="xs:boolean" default="false" />
-      <xs:attribute name="textOutput" type="xs:boolean" default="false" />
+      <xs:complexContent>
+        <xs:extension base="SampleBase">
+          <xs:attribute name="subset" type="xs:string" />
+          <xs:attribute name="blackBackground" type="xs:boolean" default="false" />
+          <xs:attribute name="textOutput" type="xs:boolean" default="false" />
+        </xs:extension>
+      </xs:complexContent>
     </xs:complexType>
   </xs:element>
 </xs:schema>

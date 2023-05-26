@@ -15,10 +15,8 @@
   <xs:element name="Samples" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="Overlapping">
-        </xs:element>
-        <xs:element ref="SimpleTiled">
-        </xs:element>
+        <xs:element ref="Overlapping" />
+        <xs:element ref="SimpleTiled" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
