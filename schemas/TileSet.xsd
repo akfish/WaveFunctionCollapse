@@ -12,27 +12,9 @@
   <xs:element name="TileSet" msdata:UseCurrentLocale="true">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="tiles" msdata:IsDataSet="true">
-          <xs:complexType>
-            <xs:choice minOccurs="1" maxOccurs="unbounded">
-              <xs:element ref="Tile" />
-            </xs:choice>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="neighbors" msdata:IsDataSet="true">
-          <xs:complexType>
-            <xs:choice minOccurs="1" maxOccurs="unbounded">
-              <xs:element ref="Neighbor" />
-            </xs:choice>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Subsets" msdata:IsDataSet="true">
-          <xs:complexType>
-            <xs:choice minOccurs="0" maxOccurs="unbounded">
-              <xs:element ref="Subset" />
-            </xs:choice>
-          </xs:complexType>
-        </xs:element>
+        <xs:element ref="Tiles" />
+        <xs:element ref="Neighbors" />
+        <xs:element ref="Subsets" />
       </xs:sequence>
       <xs:attribute name="unique" type="xs:boolean" default="false" />
     </xs:complexType>

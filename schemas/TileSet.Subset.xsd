@@ -7,12 +7,19 @@
   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
 >
   <xs:include schemaLocation="TileSet.Tile.xsd" />
-  <xs:element name="Subset" msdata:IsDataSet="true">
+  <xs:element name="Subset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
     <xs:complexType>
-      <xs:choice minOccurs="1" maxOccurs="unbounded">
-        <xs:element ref="Tile" />
+      <xs:choice>
+        <xs:element ref="Tile" minOccurs="1" maxOccurs="unbounded" />
       </xs:choice>
       <xs:attribute name="name" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Subsets" msdata:isDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Subset" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Xml.Linq;
 using System.Collections.Generic;
 using Schema;
+using Serialization;
 
 class SimpleTiledModel : Model
 {
@@ -15,17 +16,14 @@ class SimpleTiledModel : Model
 
     public SimpleTiledModel(string name, string subsetName, int width, int height, bool periodic, bool blackBackground, Heuristic heuristic) : base(width, height, 1, periodic, heuristic)
     {
-        this.blackBackground = blackBackground;
-        XElement xroot = XDocument.Load($"tilesets/{name}.xml").Root;
-        bool unique = xroot.Get("unique", false);
+        TileSetSerializer serializer = new TileSetSerializer();
+        TileSet tileSet = serializer.Deserialize($"tilesets/{name}.xml");
 
-        List<string> subset = null;
-        if (subsetName != null)
-        {
-            XElement xsubset = xroot.Element("subsets").Elements("subset").FirstOrDefault(x => x.Get<string>("name") == subsetName);
-            if (xsubset == null) Console.WriteLine($"ERROR: subset {subsetName} is not found");
-            else subset = xsubset.Elements("tile").Select(x => x.Get<string>("name")).ToList();
-        }
+        this.blackBackground = blackBackground;
+
+        bool unique = tileSet.unique;
+
+        Subset subset = subsetName == null ? null : tileSet.FindSubsetByName(subsetName);
 
         static int[] tile(Func<int, int, int> f, int size)
         {
@@ -43,40 +41,40 @@ class SimpleTiledModel : Model
         var action = new List<int[]>();
         var firstOccurrence = new Dictionary<string, int>();
 
-        foreach (XElement xtile in xroot.Element("tiles").Elements("tile"))
+        foreach (Tile xtile in tileSet.Tiles)
         {
-            string tilename = xtile.Get<string>("name");
-            if (subset != null && !subset.Contains(tilename)) continue;
+            string tilename = xtile.name;
+            if (subset != null && subset.Contains(tilename)) continue;
 
             Func<int, int> a, b;
             int cardinality;
 
-            char sym = xtile.Get("symmetry", 'X');
-            if (sym == 'L')
+            TileSymmetry sym = xtile.symmetry;
+            if (sym == TileSymmetry.L)
             {
                 cardinality = 4;
                 a = i => (i + 1) % 4;
                 b = i => i % 2 == 0 ? i + 1 : i - 1;
             }
-            else if (sym == 'T')
+            else if (sym == TileSymmetry.T)
             {
                 cardinality = 4;
                 a = i => (i + 1) % 4;
                 b = i => i % 2 == 0 ? i : 4 - i;
             }
-            else if (sym == 'I')
+            else if (sym == TileSymmetry.I)
             {
                 cardinality = 2;
                 a = i => 1 - i;
                 b = i => i;
             }
-            else if (sym == '\\' || sym == 'D')
+            else if (sym == TileSymmetry.D)
             {
                 cardinality = 2;
                 a = i => 1 - i;
                 b = i => 1 - i;
             }
-            else if (sym == 'F')
+            else if (sym == TileSymmetry.F)
             {
                 cardinality = 8;
                 a = i => i < 4 ? (i + 1) % 4 : 4 + (i - 1) % 4;
@@ -136,7 +134,7 @@ class SimpleTiledModel : Model
                 }
             }
 
-            for (int t = 0; t < cardinality; t++) weightList.Add(xtile.Get("weight", 1.0));
+            for (int t = 0; t < cardinality; t++) weightList.Add(xtile.weight);
         }
 
         T = action.Count;
@@ -151,10 +149,10 @@ class SimpleTiledModel : Model
             for (int t = 0; t < T; t++) densePropagator[d][t] = new bool[T];
         }
 
-        foreach (XElement xneighbor in xroot.Element("neighbors").Elements("neighbor"))
+        foreach (Neighbor xneighbor in tileSet.Neighbors)
         {
-            string[] left = xneighbor.Get<string>("left").Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            string[] right = xneighbor.Get<string>("right").Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] left = xneighbor.left.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] right = xneighbor.right.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
             if (subset != null && (!subset.Contains(left[0]) || !subset.Contains(right[0]))) continue;
 

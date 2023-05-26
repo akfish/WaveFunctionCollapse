@@ -11,6 +11,14 @@
     <xs:complexType>
       <xs:attribute name="name" type="xs:string" />
       <xs:attribute name="symmetry" type="TileSymmetry" />
+      <xs:attribute name="weight" type="xs:double" default="1.0" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tiles" msdata:isDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Tile" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

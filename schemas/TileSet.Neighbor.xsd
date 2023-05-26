@@ -12,4 +12,11 @@
       <xs:attribute name="right" type="xs:string" />
     </xs:complexType>
   </xs:element>
+  <xs:element name="Neighbors" msdata:isDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Neighbor" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
