@@ -44,7 +44,7 @@ class SimpleTiledModel : Model
         foreach (Tile xtile in tileSet.Tiles)
         {
             string tilename = xtile.name;
-            if (subset != null && subset.Contains(tilename)) continue;
+            if (subset != null && !subset.Contains(tilename)) continue;
 
             Func<int, int> a, b;
             int cardinality;
