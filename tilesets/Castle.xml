@@ -1,74 +1,77 @@
-<set>
-	<tiles>
-		<tile name="bridge" symmetry="I"/>
-		<tile name="ground" symmetry="X"/>
-		<tile name="river" symmetry="I"/>
-		<tile name="riverturn" symmetry="L"/>
-		<tile name="road" symmetry="I"/>
-		<tile name="roadturn" symmetry="L"/>
-		<tile name="t" symmetry="T"/>
-		<tile name="tower" symmetry="L"/>
-		<tile name="wall" symmetry="I"/>
-		<tile name="wallriver" symmetry="I"/>
-		<tile name="wallroad" symmetry="I"/>
-	</tiles>
-	<neighbors>
-		<neighbor left="bridge 1" right="river 1"/>
-		<neighbor left="bridge 1" right="riverturn 1"/>
-		<neighbor left="bridge" right="road 1"/>
-		<neighbor left="bridge" right="roadturn 1"/>
-		<neighbor left="bridge" right="t"/>
-		<neighbor left="bridge" right="t 3"/>
-		<neighbor left="bridge" right="wallroad"/>
-		<neighbor left="ground" right="ground"/>
-		<neighbor left="ground" right="river"/>
-		<neighbor left="ground" right="riverturn"/>
-		<neighbor left="ground" right="road"/>
-		<neighbor left="ground" right="roadturn"/>
-		<neighbor left="ground" right="t 1"/>
-		<neighbor left="ground" right="tower"/>
-		<neighbor left="ground" right="wall"/>
-		<neighbor left="river 1" right="river 1"/>
-		<neighbor left="river 1" right="riverturn 1"/>
-		<neighbor left="river" right="road"/>
-		<neighbor left="river" right="roadturn"/>
-		<neighbor left="river" right="t 1"/>
-		<neighbor left="river" right="tower"/>
-		<neighbor left="river" right="wall"/>
-		<neighbor left="river 1" right="wallriver"/>
-		<neighbor left="riverturn" right="riverturn 2"/>
-		<neighbor left="road" right="riverturn"/>
-		<neighbor left="roadturn 1" right="riverturn"/>
-		<neighbor left="roadturn 2" right="riverturn"/>
-		<neighbor left="t 3" right="riverturn"/>
-		<neighbor left="tower 1" right="riverturn"/>
-		<neighbor left="tower 2" right="riverturn"/>
-		<neighbor left="wall" right="riverturn"/>
-		<neighbor left="riverturn" right="wallriver"/>
-		<neighbor left="road 1" right="road 1"/>
-		<neighbor left="roadturn" right="road 1"/>
-		<neighbor left="road 1" right="t"/>
-		<neighbor left="road 1" right="t 3"/>
-		<neighbor left="road" right="tower"/>
-		<neighbor left="road" right="wall"/>
-		<neighbor left="road 1" right="wallroad"/>
-		<neighbor left="roadturn" right="roadturn 2"/>
-		<neighbor left="roadturn" right="t"/>
-		<neighbor left="roadturn 1" right="tower"/>
-		<neighbor left="roadturn 2" right="tower"/>
-		<neighbor left="roadturn 1" right="wall"/>
-		<neighbor left="roadturn" right="wallroad"/>
-		<neighbor left="t" right="t 2"/>
-		<neighbor left="t 3" right="tower"/>
-		<neighbor left="t 3" right="wall"/>
-		<neighbor left="t" right="wallroad"/>
-		<neighbor left="t 1" right="wallroad"/>
-		<neighbor left="tower" right="wall 1"/>
-		<neighbor left="tower" right="wallriver 1"/>
-		<neighbor left="tower" right="wallroad 1"/>
-		<neighbor left="wall 1" right="wall 1"/>
-		<neighbor left="wall 1" right="wallriver 1"/>
-		<neighbor left="wall 1" right="wallroad 1"/>
-		<neighbor left="wallriver 1" right="wallroad 1"/>
-	</neighbors>
-</set>
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSet
+  xmlns="http://yeahcat.cn/wfc/tileset"
+>
+	<Tiles>
+		<Tile name="bridge" symmetry="I"/>
+		<Tile name="ground" symmetry="X"/>
+		<Tile name="river" symmetry="I"/>
+		<Tile name="riverturn" symmetry="L"/>
+		<Tile name="road" symmetry="I"/>
+		<Tile name="roadturn" symmetry="L"/>
+		<Tile name="t" symmetry="T"/>
+		<Tile name="tower" symmetry="L"/>
+		<Tile name="wall" symmetry="I"/>
+		<Tile name="wallriver" symmetry="I"/>
+		<Tile name="wallroad" symmetry="I"/>
+	</Tiles>
+	<Neighbors>
+		<Neighbor left="bridge 1" right="river 1"/>
+		<Neighbor left="bridge 1" right="riverturn 1"/>
+		<Neighbor left="bridge" right="road 1"/>
+		<Neighbor left="bridge" right="roadturn 1"/>
+		<Neighbor left="bridge" right="t"/>
+		<Neighbor left="bridge" right="t 3"/>
+		<Neighbor left="bridge" right="wallroad"/>
+		<Neighbor left="ground" right="ground"/>
+		<Neighbor left="ground" right="river"/>
+		<Neighbor left="ground" right="riverturn"/>
+		<Neighbor left="ground" right="road"/>
+		<Neighbor left="ground" right="roadturn"/>
+		<Neighbor left="ground" right="t 1"/>
+		<Neighbor left="ground" right="tower"/>
+		<Neighbor left="ground" right="wall"/>
+		<Neighbor left="river 1" right="river 1"/>
+		<Neighbor left="river 1" right="riverturn 1"/>
+		<Neighbor left="river" right="road"/>
+		<Neighbor left="river" right="roadturn"/>
+		<Neighbor left="river" right="t 1"/>
+		<Neighbor left="river" right="tower"/>
+		<Neighbor left="river" right="wall"/>
+		<Neighbor left="river 1" right="wallriver"/>
+		<Neighbor left="riverturn" right="riverturn 2"/>
+		<Neighbor left="road" right="riverturn"/>
+		<Neighbor left="roadturn 1" right="riverturn"/>
+		<Neighbor left="roadturn 2" right="riverturn"/>
+		<Neighbor left="t 3" right="riverturn"/>
+		<Neighbor left="tower 1" right="riverturn"/>
+		<Neighbor left="tower 2" right="riverturn"/>
+		<Neighbor left="wall" right="riverturn"/>
+		<Neighbor left="riverturn" right="wallriver"/>
+		<Neighbor left="road 1" right="road 1"/>
+		<Neighbor left="roadturn" right="road 1"/>
+		<Neighbor left="road 1" right="t"/>
+		<Neighbor left="road 1" right="t 3"/>
+		<Neighbor left="road" right="tower"/>
+		<Neighbor left="road" right="wall"/>
+		<Neighbor left="road 1" right="wallroad"/>
+		<Neighbor left="roadturn" right="roadturn 2"/>
+		<Neighbor left="roadturn" right="t"/>
+		<Neighbor left="roadturn 1" right="tower"/>
+		<Neighbor left="roadturn 2" right="tower"/>
+		<Neighbor left="roadturn 1" right="wall"/>
+		<Neighbor left="roadturn" right="wallroad"/>
+		<Neighbor left="t" right="t 2"/>
+		<Neighbor left="t 3" right="tower"/>
+		<Neighbor left="t 3" right="wall"/>
+		<Neighbor left="t" right="wallroad"/>
+		<Neighbor left="t 1" right="wallroad"/>
+		<Neighbor left="tower" right="wall 1"/>
+		<Neighbor left="tower" right="wallriver 1"/>
+		<Neighbor left="tower" right="wallroad 1"/>
+		<Neighbor left="wall 1" right="wall 1"/>
+		<Neighbor left="wall 1" right="wallriver 1"/>
+		<Neighbor left="wall 1" right="wallroad 1"/>
+		<Neighbor left="wallriver 1" right="wallroad 1"/>
+	</Neighbors>
+</TileSet>

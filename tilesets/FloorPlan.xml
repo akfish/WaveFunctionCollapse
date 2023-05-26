@@ -1,165 +1,168 @@
-<set>
-  <tiles>
-    <tile name="empty" symmetry="X" weight="0.1"/>
-    <tile name="out" symmetry="L"/>
-    <tile name="wall" symmetry="T"/>
-    <tile name="in" symmetry="L"/>
-    <tile name="floor" symmetry="X"/>
-    <tile name="halfglass" symmetry="F"/>
-    <tile name="glass" symmetry="T"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSet
+  xmlns="http://yeahcat.cn/wfc/tileset"
+>
+  <Tiles>
+    <Tile name="empty" symmetry="X" weight="0.1"/>
+    <Tile name="out" symmetry="L"/>
+    <Tile name="wall" symmetry="T"/>
+    <Tile name="in" symmetry="L"/>
+    <Tile name="floor" symmetry="X"/>
+    <Tile name="halfglass" symmetry="F"/>
+    <Tile name="glass" symmetry="T"/>
 
-    <tile name="walldiv" symmetry="T"/>
-    <tile name="divturn" symmetry="L"/>
-    <tile name="div" symmetry="I"/>
-    <tile name="divt" symmetry="T"/>
-    <tile name="stairs" symmetry="T"/>
+    <Tile name="walldiv" symmetry="T"/>
+    <Tile name="divturn" symmetry="L"/>
+    <Tile name="div" symmetry="I"/>
+    <Tile name="divt" symmetry="T"/>
+    <Tile name="stairs" symmetry="T"/>
 
-    <tile name="w" symmetry="T"/>
-    <tile name="window" symmetry="T"/>
-    <tile name="door" symmetry="I" weight="0.5"/>
-    <tile name="vent" symmetry="X" weight="0.5"/>
-    <tile name="table" symmetry="X" weight="0.8"/>
-  </tiles>
-  <neighbors>
-    <neighbor left="empty" right="empty"/>
-    <neighbor left="empty" right="out"/>
-    <neighbor left="empty" right="wall 3"/>
-    <neighbor left="out" right="wall"/>
-    <neighbor left="wall" right="wall"/>
-    <neighbor left="wall" right="in"/>
-    <neighbor left="wall 3" right="floor"/>
-    <neighbor left="in" right="floor"/>
-    <neighbor left="floor" right="floor"/>
+    <Tile name="w" symmetry="T"/>
+    <Tile name="window" symmetry="T"/>
+    <Tile name="door" symmetry="I" weight="0.5"/>
+    <Tile name="vent" symmetry="X" weight="0.5"/>
+    <Tile name="table" symmetry="X" weight="0.8"/>
+  </Tiles>
+  <Neighbors>
+    <Neighbor left="empty" right="empty"/>
+    <Neighbor left="empty" right="out"/>
+    <Neighbor left="empty" right="wall 3"/>
+    <Neighbor left="out" right="wall"/>
+    <Neighbor left="wall" right="wall"/>
+    <Neighbor left="wall" right="in"/>
+    <Neighbor left="wall 3" right="floor"/>
+    <Neighbor left="in" right="floor"/>
+    <Neighbor left="floor" right="floor"/>
 
-    <neighbor left="empty" right="halfglass 3"/>
-    <neighbor left="out" right="halfglass"/>
-    <neighbor left="in 1" right="halfglass"/>
-    <neighbor left="halfglass 3" right="floor"/>
-    <neighbor left="halfglass" right="glass"/>
-    <neighbor left="glass" right="glass"/>
-    <neighbor left="empty" right="glass 3"/>
-    <neighbor left="glass 3" right="floor"/>
+    <Neighbor left="empty" right="halfglass 3"/>
+    <Neighbor left="out" right="halfglass"/>
+    <Neighbor left="in 1" right="halfglass"/>
+    <Neighbor left="halfglass 3" right="floor"/>
+    <Neighbor left="halfglass" right="glass"/>
+    <Neighbor left="glass" right="glass"/>
+    <Neighbor left="empty" right="glass 3"/>
+    <Neighbor left="glass 3" right="floor"/>
 
-    <neighbor left="empty" right="walldiv 3"/>
-    <neighbor left="out" right="walldiv"/>
-    <neighbor left="wall" right="walldiv"/>
-    <neighbor left="walldiv" right="in"/>
-    <neighbor left="walldiv" right="halfglass"/>
-    <neighbor left="divturn" right="walldiv 1"/>
-    <neighbor left="div" right="walldiv 1"/>
-    <neighbor left="divt" right="walldiv 1"/>
+    <Neighbor left="empty" right="walldiv 3"/>
+    <Neighbor left="out" right="walldiv"/>
+    <Neighbor left="wall" right="walldiv"/>
+    <Neighbor left="walldiv" right="in"/>
+    <Neighbor left="walldiv" right="halfglass"/>
+    <Neighbor left="divturn" right="walldiv 1"/>
+    <Neighbor left="div" right="walldiv 1"/>
+    <Neighbor left="divt" right="walldiv 1"/>
 
-    <neighbor left="wall 3" right="divturn"/>
-    <neighbor left="in" right="divturn"/>
-    <neighbor left="in" right="divturn 3"/>
-    <neighbor left="floor" right="divturn"/>
-    <neighbor left="halfglass 3" right="divturn"/>
-    <neighbor left="halfglass 3" right="divturn 3"/>
-    <neighbor left="glass 3" right="divturn"/>
-    <neighbor left="divturn 1" right="divturn"/>
-    <neighbor left="divturn 2" right="divturn"/>
+    <Neighbor left="wall 3" right="divturn"/>
+    <Neighbor left="in" right="divturn"/>
+    <Neighbor left="in" right="divturn 3"/>
+    <Neighbor left="floor" right="divturn"/>
+    <Neighbor left="halfglass 3" right="divturn"/>
+    <Neighbor left="halfglass 3" right="divturn 3"/>
+    <Neighbor left="glass 3" right="divturn"/>
+    <Neighbor left="divturn 1" right="divturn"/>
+    <Neighbor left="divturn 2" right="divturn"/>
 
-    <neighbor left="wall 3" right="div 1"/>
-    <neighbor left="in" right="div 1"/>
-    <neighbor left="floor" right="div 1"/>
-    <neighbor left="halfglass 3" right="div 1"/>
-    <neighbor left="glass 3" right="div 1"/>
-    <neighbor left="div 1" right="divturn"/>
-    <neighbor left="divturn" right="div"/>
-    <neighbor left="div" right="div"/>
-    <neighbor left="div 1" right="div 1"/>
+    <Neighbor left="wall 3" right="div 1"/>
+    <Neighbor left="in" right="div 1"/>
+    <Neighbor left="floor" right="div 1"/>
+    <Neighbor left="halfglass 3" right="div 1"/>
+    <Neighbor left="glass 3" right="div 1"/>
+    <Neighbor left="div 1" right="divturn"/>
+    <Neighbor left="divturn" right="div"/>
+    <Neighbor left="div" right="div"/>
+    <Neighbor left="div 1" right="div 1"/>
 
-    <neighbor left="wall 3" right="divt 1"/>
-    <neighbor left="in" right="divt 1"/>
-    <neighbor left="floor" right="divt 1"/>
-    <neighbor left="halfglass 3" right="divt 1"/>
-    <neighbor left="glass 3" right="divt 1"/>
-    <neighbor left="divturn 1" right="divt 1"/>
-    <neighbor left="divturn" right="divt"/>
-    <neighbor left="div 1" right="divt 1"/>
-    <neighbor left="div" right="divt"/>
-    <neighbor left="div" right="divt 3"/>
-    <neighbor left="divt 3" right="divt 1"/>
-    <neighbor left="divt" right="divt 2"/>
+    <Neighbor left="wall 3" right="divt 1"/>
+    <Neighbor left="in" right="divt 1"/>
+    <Neighbor left="floor" right="divt 1"/>
+    <Neighbor left="halfglass 3" right="divt 1"/>
+    <Neighbor left="glass 3" right="divt 1"/>
+    <Neighbor left="divturn 1" right="divt 1"/>
+    <Neighbor left="divturn" right="divt"/>
+    <Neighbor left="div 1" right="divt 1"/>
+    <Neighbor left="div" right="divt"/>
+    <Neighbor left="div" right="divt 3"/>
+    <Neighbor left="divt 3" right="divt 1"/>
+    <Neighbor left="divt" right="divt 2"/>
 
-    <neighbor left="wall 3" right="stairs 1"/>
-    <neighbor left="in" right="stairs 1"/>
-    <neighbor left="floor" right="stairs 1"/>
-    <neighbor left="halfglass 3" right="stairs 1"/>
-    <neighbor left="glass 3" right="stairs 1"/>
-    <neighbor left="stairs 3" right="divturn"/>
-    <neighbor left="divturn" right="stairs"/>
-    <neighbor left="div 1" right="stairs 1"/>
-    <neighbor left="div" right="stairs"/>
-    <neighbor left="divt 3" right="stairs 1"/>
-    <neighbor left="divt 2" right="stairs"/>
-    <neighbor left="stairs 3" right="stairs 1"/>
-    <neighbor left="stairs 1" right="stairs 3"/>
+    <Neighbor left="wall 3" right="stairs 1"/>
+    <Neighbor left="in" right="stairs 1"/>
+    <Neighbor left="floor" right="stairs 1"/>
+    <Neighbor left="halfglass 3" right="stairs 1"/>
+    <Neighbor left="glass 3" right="stairs 1"/>
+    <Neighbor left="stairs 3" right="divturn"/>
+    <Neighbor left="divturn" right="stairs"/>
+    <Neighbor left="div 1" right="stairs 1"/>
+    <Neighbor left="div" right="stairs"/>
+    <Neighbor left="divt 3" right="stairs 1"/>
+    <Neighbor left="divt 2" right="stairs"/>
+    <Neighbor left="stairs 3" right="stairs 1"/>
+    <Neighbor left="stairs 1" right="stairs 3"/>
 
-    <neighbor left="empty" right="w 3"/>
-    <neighbor left="out" right="w"/>
-    <neighbor left="w" right="in"/>
-    <neighbor left="floor" right="w 1"/>
-    <neighbor left="walldiv" right="w"/>
-    <neighbor left="w" right="w"/>
-    <neighbor left="w 3" right="divturn"/>
-    <neighbor left="w 3" right="div 1"/>
-    <neighbor left="w 3" right="divt 1"/>
-    <neighbor left="w 3" right="stairs 1"/>
-    <neighbor left="empty" right="window 3"/>
-    <neighbor left="out" right="window"/>
-    <neighbor left="window" right="in"/>
-    <neighbor left="floor" right="window 1"/>
-    <neighbor left="walldiv" right="window"/>
-    <neighbor left="window" right="window"/>
-    <neighbor left="window 3" right="divturn"/>
-    <neighbor left="window 3" right="div 1"/>
-    <neighbor left="window 3" right="divt 1"/>
-    <neighbor left="window 3" right="stairs 1"/>
+    <Neighbor left="empty" right="w 3"/>
+    <Neighbor left="out" right="w"/>
+    <Neighbor left="w" right="in"/>
+    <Neighbor left="floor" right="w 1"/>
+    <Neighbor left="walldiv" right="w"/>
+    <Neighbor left="w" right="w"/>
+    <Neighbor left="w 3" right="divturn"/>
+    <Neighbor left="w 3" right="div 1"/>
+    <Neighbor left="w 3" right="divt 1"/>
+    <Neighbor left="w 3" right="stairs 1"/>
+    <Neighbor left="empty" right="window 3"/>
+    <Neighbor left="out" right="window"/>
+    <Neighbor left="window" right="in"/>
+    <Neighbor left="floor" right="window 1"/>
+    <Neighbor left="walldiv" right="window"/>
+    <Neighbor left="window" right="window"/>
+    <Neighbor left="window 3" right="divturn"/>
+    <Neighbor left="window 3" right="div 1"/>
+    <Neighbor left="window 3" right="divt 1"/>
+    <Neighbor left="window 3" right="stairs 1"/>
     
-    <neighbor left="wall 3" right="door 1"/>
-    <neighbor left="in" right="door 1"/>
-    <neighbor left="floor" right="door 1"/>
-    <neighbor left="halfglass 3" right="door 1"/>
-    <neighbor left="glass 3" right="door 1"/>
-    <neighbor left="walldiv 3" right="door"/>
-    <neighbor left="w" right="door 1"/>
-    <neighbor left="window" right="door 1"/>
-    <neighbor left="door 1" right="divturn"/>
-    <neighbor left="divturn" right="door"/>
-    <neighbor left="div 1" right="door 1"/>
-    <neighbor left="div" right="door"/>
-    <neighbor left="divt 3" right="door 1"/>
-    <neighbor left="divt" right="door"/>
-    <neighbor left="divt 1" right="door"/>
-    <neighbor left="stairs 3" right="door 1"/>
-    <neighbor left="stairs" right="door"/>
-    <neighbor left="door 1" right="door 1"/>
-    <neighbor left="door" right="door"/>
+    <Neighbor left="wall 3" right="door 1"/>
+    <Neighbor left="in" right="door 1"/>
+    <Neighbor left="floor" right="door 1"/>
+    <Neighbor left="halfglass 3" right="door 1"/>
+    <Neighbor left="glass 3" right="door 1"/>
+    <Neighbor left="walldiv 3" right="door"/>
+    <Neighbor left="w" right="door 1"/>
+    <Neighbor left="window" right="door 1"/>
+    <Neighbor left="door 1" right="divturn"/>
+    <Neighbor left="divturn" right="door"/>
+    <Neighbor left="div 1" right="door 1"/>
+    <Neighbor left="div" right="door"/>
+    <Neighbor left="divt 3" right="door 1"/>
+    <Neighbor left="divt" right="door"/>
+    <Neighbor left="divt 1" right="door"/>
+    <Neighbor left="stairs 3" right="door 1"/>
+    <Neighbor left="stairs" right="door"/>
+    <Neighbor left="door 1" right="door 1"/>
+    <Neighbor left="door" right="door"/>
 
-    <neighbor left="wall 3" right="vent"/>
-    <neighbor left="in" right="vent"/>
-    <neighbor left="halfglass 3" right="vent"/>
-    <neighbor left="glass 3" right="vent"/>
-    <neighbor left="w 3" right="vent"/>
-    <neighbor left="window 3" right="vent"/>
-    <neighbor left="vent" right="divturn"/>
-    <neighbor left="div 1" right="vent"/>
-    <neighbor left="divt 3" right="vent"/>
-    <neighbor left="vent" right="vent"/>
-    <neighbor left="stairs 3" right="vent"/>
-    <neighbor left="door 1" right="vent"/>
-    <neighbor left="wall 3" right="table"/>
-    <neighbor left="in" right="table"/>
-    <neighbor left="halfglass 3" right="table"/>
-    <neighbor left="glass 3" right="table"/>
-    <neighbor left="w 3" right="table"/>
-    <neighbor left="window 3" right="table"/>
-    <neighbor left="table" right="divturn"/>
-    <neighbor left="div 1" right="table"/>
-    <neighbor left="divt 3" right="table"/>
-    <neighbor left="table" right="table"/>
-    <neighbor left="stairs 3" right="table"/>
-    <neighbor left="door 1" right="table"/>
-  </neighbors>
-</set>
+    <Neighbor left="wall 3" right="vent"/>
+    <Neighbor left="in" right="vent"/>
+    <Neighbor left="halfglass 3" right="vent"/>
+    <Neighbor left="glass 3" right="vent"/>
+    <Neighbor left="w 3" right="vent"/>
+    <Neighbor left="window 3" right="vent"/>
+    <Neighbor left="vent" right="divturn"/>
+    <Neighbor left="div 1" right="vent"/>
+    <Neighbor left="divt 3" right="vent"/>
+    <Neighbor left="vent" right="vent"/>
+    <Neighbor left="stairs 3" right="vent"/>
+    <Neighbor left="door 1" right="vent"/>
+    <Neighbor left="wall 3" right="table"/>
+    <Neighbor left="in" right="table"/>
+    <Neighbor left="halfglass 3" right="table"/>
+    <Neighbor left="glass 3" right="table"/>
+    <Neighbor left="w 3" right="table"/>
+    <Neighbor left="window 3" right="table"/>
+    <Neighbor left="table" right="divturn"/>
+    <Neighbor left="div 1" right="table"/>
+    <Neighbor left="divt 3" right="table"/>
+    <Neighbor left="table" right="table"/>
+    <Neighbor left="stairs 3" right="table"/>
+    <Neighbor left="door 1" right="table"/>
+  </Neighbors>
+</TileSet>
