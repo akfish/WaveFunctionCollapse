@@ -5,10 +5,11 @@ using System.Xml.Linq;
 using System.Diagnostics;
 using Schema;
 using System.Xml.Serialization;
+using System.IO;
 
 static class Program
 {
-    static void Main()
+    static void Main(string[] names)
     {
         Stopwatch sw = Stopwatch.StartNew();
         var folder = System.IO.Directory.CreateDirectory("output");
@@ -20,8 +21,17 @@ static class Program
 
         Random random = new();
 
+        SampleBase[] samplesToRun = names.Length == 0
+            ? samples.Items
+            : Array.ConvertAll(names, name => Array.Find(samples.Items, sample => sample.name == name));
+
+        if (samplesToRun.Length == 0) {
+            Console.WriteLine("No samples found");
+            return;
+        }
+
         // For each sample in the XML file
-        foreach (SampleBase sample in samples.Items) {
+        foreach (SampleBase sample in samplesToRun) {
             Model model;
             Console.WriteLine($"< {sample.name}");
             if (sample is Overlapping) {
