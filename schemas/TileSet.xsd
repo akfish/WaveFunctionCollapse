@@ -8,6 +8,7 @@
 >
   <xs:include schemaLocation="TileSet.Tile.xsd" />
   <xs:include schemaLocation="TileSet.Neighbor.xsd" />
+  <xs:include schemaLocation="TileSet.Subset.xsd" />
   <xs:element name="TileSet" msdata:UseCurrentLocale="true">
     <xs:complexType>
       <xs:sequence>
@@ -25,7 +26,15 @@
             </xs:choice>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Subsets" msdata:IsDataSet="true">
+          <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element ref="Subset" />
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
       </xs:sequence>
+      <xs:attribute name="unique" type="xs:boolean" default="false" />
     </xs:complexType>
   </xs:element>
 </xs:schema>

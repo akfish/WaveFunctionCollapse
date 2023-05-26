@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema
+  id="tileset.subset"
+  targetNamespace="http://yeahcat.cn/wfc/tileset"
+  xmlns="http://yeahcat.cn/wfc/tileset"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+>
+  <xs:include schemaLocation="TileSet.Tile.xsd" />
+  <xs:element name="Subset" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="Tile" />
+      </xs:choice>
+      <xs:attribute name="name" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
