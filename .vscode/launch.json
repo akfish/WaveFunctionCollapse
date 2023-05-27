@@ -18,7 +18,10 @@
         // "FloorPlan",
         // "Knots",
         // "Rooms",
-        // "Summer"
+        // "Summer",
+        "!Circle-3",
+        "!Circle-4",
+        "!Font-5"
       ],
       "cwd": "${workspaceFolder}",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
