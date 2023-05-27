@@ -1,121 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TileSet
-  xmlns="http://yeahcat.cn/wfc/tileset"
+	xmlns="http://yeahcat.cn/wfc/tileset"
 >
 	<Tiles>
-		<Tile name="b_half" symmetry="T"/>
-		<Tile name="b_i" symmetry="I"/>
-		<Tile name="b_quarter" symmetry="L"/>
-		<Tile name="w_half" symmetry="T"/>
-		<Tile name="w_i" symmetry="I"/>
-		<Tile name="w_quarter" symmetry="L"/>
-		<Tile name="b" symmetry="X"/>
-		<Tile name="w" symmetry="X"/>
+		<Tile name="b_half" symmetry="T" />
+		<Tile name="b_i" symmetry="I" />
+		<Tile name="b_quarter" symmetry="L" />
+		<Tile name="w_half" symmetry="T" />
+		<Tile name="w_i" symmetry="I" />
+		<Tile name="w_quarter" symmetry="L" />
+		<Tile name="b" symmetry="X" />
+		<Tile name="w" symmetry="X" />
 	</Tiles>
 	<Neighbors>
-		<Neighbor left="b_half" right="b_half"/>
-		<Neighbor left="b_half 1" right="b_half 3"/>
-		<Neighbor left="b_half 3" right="b_half 1"/>
-		<Neighbor left="b_half" right="b_half 3"/>
-		<Neighbor left="b_half" right="b_half 2"/>
-		<Neighbor left="b_half" right="b_i"/>
-		<Neighbor left="b_half 3" right="b_i 3"/>
-		<Neighbor left="b_half 1" right="b_i"/>
-		<Neighbor left="b_half" right="b_quarter"/>
-		<Neighbor left="b_half 1" right="b_quarter"/>
-		<Neighbor left="b_half 2" right="b_quarter"/>
-		<Neighbor left="b_half 3" right="b_quarter 1"/>
-		<Neighbor left="b_i" right="b_i"/>
-		<Neighbor left="b_i 1" right="b_i 1"/>
-		<Neighbor left="b_i" right="b_quarter"/>
-		<Neighbor left="b_i 1" right="b_quarter 1"/>
-		<Neighbor left="b_quarter" right="b_quarter 1"/>
-		<Neighbor left="b_quarter 1" right="b_quarter"/>
-		<Neighbor left="b_quarter 2" right="b_quarter"/>
-		<Neighbor left="b_quarter" right="b_quarter 2"/>
-		<Neighbor left="b_half 1" right="w_half 1"/>
-		<Neighbor left="b_half" right="w_half 1"/>
-		<Neighbor left="b_half 3" right="w_half"/>
-		<Neighbor left="b_half 3" right="w_half 3"/>
-		<Neighbor left="b_half" right="w_i 1"/>
-		<Neighbor left="b_half 1" right="w_i 1"/>
-		<Neighbor left="b_half 3" right="w_i"/>
-		<Neighbor left="b_half" right="w_quarter 1"/>
-		<Neighbor left="b_half" right="w_quarter 2"/>
-		<Neighbor left="b_half 1" right="w_quarter 1"/>
-		<Neighbor left="b_half 3" right="w_quarter"/>
-		<Neighbor left="b_i" right="w_half 1"/>
-		<Neighbor left="b_i 1" right="w_half"/>
-		<Neighbor left="b_i 1" right="w_half 3"/>
-		<Neighbor left="b_i" right="w_i 1"/>
-		<Neighbor left="b_i 1" right="w_i"/>
-		<Neighbor left="b_i" right="w_quarter 1"/>
-		<Neighbor left="b_i 1" right="w_quarter"/>
-		<Neighbor left="b_quarter" right="w_half"/>
-		<Neighbor left="b_quarter" right="w_half 3"/>
-		<Neighbor left="b_quarter" right="w_half 2"/>
-		<Neighbor left="b_quarter 1" right="w_half 1"/>
-		<Neighbor left="b_quarter" right="w_i"/>
-		<Neighbor left="b_quarter 1" right="w_i 1"/>
-		<Neighbor left="b_quarter" right="w_quarter"/>
-		<Neighbor left="b_quarter" right="w_quarter 3"/>
-		<Neighbor left="b_quarter 1" right="w_quarter 1"/>
-		<Neighbor left="b_quarter 1" right="w_quarter 2"/>
-		<Neighbor left="w_half" right="w_half"/>
-		<Neighbor left="w_half 1" right="w_half 3"/>
-		<Neighbor left="w_half 3" right="w_half 1"/>
-		<Neighbor left="w_half" right="w_half 3"/>
-		<Neighbor left="w_half" right="w_half 2"/>
-		<Neighbor left="w_half" right="w_i"/>
-		<Neighbor left="w_half 3" right="w_i 3"/>
-		<Neighbor left="w_half 1" right="w_i"/>
-		<Neighbor left="w_half" right="w_quarter"/>
-		<Neighbor left="w_half 1" right="w_quarter"/>
-		<Neighbor left="w_half 2" right="w_quarter"/>
-		<Neighbor left="w_half 3" right="w_quarter 1"/>
-		<Neighbor left="w_i" right="w_i"/>
-		<Neighbor left="w_i 1" right="w_i 1"/>
-		<Neighbor left="w_i" right="w_quarter"/>
-		<Neighbor left="w_i 1" right="w_quarter 1"/>
-		<Neighbor left="w_quarter" right="w_quarter 1"/>
-		<Neighbor left="w_quarter 1" right="w_quarter"/>
-		<Neighbor left="w_quarter 2" right="w_quarter"/>
-		<Neighbor left="w_quarter" right="w_quarter 2"/>
-		<Neighbor left="b" right="b"/>
-		<Neighbor left="b" right="b_half 1"/>
-		<Neighbor left="b" right="b_i 1"/>
-		<Neighbor left="b" right="b_quarter 1"/>
-		<Neighbor left="b" right="w_half"/>
-		<Neighbor left="b" right="w_half 3"/>
-		<Neighbor left="b" right="w_i"/>
-		<Neighbor left="b" right="w_quarter"/>
-		<Neighbor left="w" right="w"/>
-		<Neighbor left="w" right="w_half 1"/>
-		<Neighbor left="w" right="w_i 1"/>
-		<Neighbor left="w" right="w_quarter 1"/>
-		<Neighbor left="w" right="b_half"/>
-		<Neighbor left="w" right="b_half 3"/>
-		<Neighbor left="w" right="b_i"/>
-		<Neighbor left="w" right="b_quarter"/>
+		<Neighbor left="b_half" right="b_half" />
+		<Neighbor left="b_half 1" right="b_half 3" />
+		<Neighbor left="b_half 3" right="b_half 1" />
+		<Neighbor left="b_half" right="b_half 3" />
+		<Neighbor left="b_half" right="b_half 2" />
+		<Neighbor left="b_half" right="b_i" />
+		<Neighbor left="b_half 3" right="b_i 3" />
+		<Neighbor left="b_half 1" right="b_i" />
+		<Neighbor left="b_half" right="b_quarter" />
+		<Neighbor left="b_half 1" right="b_quarter" />
+		<Neighbor left="b_half 2" right="b_quarter" />
+		<Neighbor left="b_half 3" right="b_quarter 1" />
+		<Neighbor left="b_i" right="b_i" />
+		<Neighbor left="b_i 1" right="b_i 1" />
+		<Neighbor left="b_i" right="b_quarter" />
+		<Neighbor left="b_i 1" right="b_quarter 1" />
+		<Neighbor left="b_quarter" right="b_quarter 1" />
+		<Neighbor left="b_quarter 1" right="b_quarter" />
+		<Neighbor left="b_quarter 2" right="b_quarter" />
+		<Neighbor left="b_quarter" right="b_quarter 2" />
+		<Neighbor left="b_half 1" right="w_half 1" />
+		<Neighbor left="b_half" right="w_half 1" />
+		<Neighbor left="b_half 3" right="w_half" />
+		<Neighbor left="b_half 3" right="w_half 3" />
+		<Neighbor left="b_half" right="w_i 1" />
+		<Neighbor left="b_half 1" right="w_i 1" />
+		<Neighbor left="b_half 3" right="w_i" />
+		<Neighbor left="b_half" right="w_quarter 1" />
+		<Neighbor left="b_half" right="w_quarter 2" />
+		<Neighbor left="b_half 1" right="w_quarter 1" />
+		<Neighbor left="b_half 3" right="w_quarter" />
+		<Neighbor left="b_i" right="w_half 1" />
+		<Neighbor left="b_i 1" right="w_half" />
+		<Neighbor left="b_i 1" right="w_half 3" />
+		<Neighbor left="b_i" right="w_i 1" />
+		<Neighbor left="b_i 1" right="w_i" />
+		<Neighbor left="b_i" right="w_quarter 1" />
+		<Neighbor left="b_i 1" right="w_quarter" />
+		<Neighbor left="b_quarter" right="w_half" />
+		<Neighbor left="b_quarter" right="w_half 3" />
+		<Neighbor left="b_quarter" right="w_half 2" />
+		<Neighbor left="b_quarter 1" right="w_half 1" />
+		<Neighbor left="b_quarter" right="w_i" />
+		<Neighbor left="b_quarter 1" right="w_i 1" />
+		<Neighbor left="b_quarter" right="w_quarter" />
+		<Neighbor left="b_quarter" right="w_quarter 3" />
+		<Neighbor left="b_quarter 1" right="w_quarter 1" />
+		<Neighbor left="b_quarter 1" right="w_quarter 2" />
+		<Neighbor left="w_half" right="w_half" />
+		<Neighbor left="w_half 1" right="w_half 3" />
+		<Neighbor left="w_half 3" right="w_half 1" />
+		<Neighbor left="w_half" right="w_half 3" />
+		<Neighbor left="w_half" right="w_half 2" />
+		<Neighbor left="w_half" right="w_i" />
+		<Neighbor left="w_half 3" right="w_i 3" />
+		<Neighbor left="w_half 1" right="w_i" />
+		<Neighbor left="w_half" right="w_quarter" />
+		<Neighbor left="w_half 1" right="w_quarter" />
+		<Neighbor left="w_half 2" right="w_quarter" />
+		<Neighbor left="w_half 3" right="w_quarter 1" />
+		<Neighbor left="w_i" right="w_i" />
+		<Neighbor left="w_i 1" right="w_i 1" />
+		<Neighbor left="w_i" right="w_quarter" />
+		<Neighbor left="w_i 1" right="w_quarter 1" />
+		<Neighbor left="w_quarter" right="w_quarter 1" />
+		<Neighbor left="w_quarter 1" right="w_quarter" />
+		<Neighbor left="w_quarter 2" right="w_quarter" />
+		<Neighbor left="w_quarter" right="w_quarter 2" />
+		<Neighbor left="b" right="b" />
+		<Neighbor left="b" right="b_half 1" />
+		<Neighbor left="b" right="b_i 1" />
+		<Neighbor left="b" right="b_quarter 1" />
+		<Neighbor left="b" right="w_half" />
+		<Neighbor left="b" right="w_half 3" />
+		<Neighbor left="b" right="w_i" />
+		<Neighbor left="b" right="w_quarter" />
+		<Neighbor left="w" right="w" />
+		<Neighbor left="w" right="w_half 1" />
+		<Neighbor left="w" right="w_i 1" />
+		<Neighbor left="w" right="w_quarter 1" />
+		<Neighbor left="w" right="b_half" />
+		<Neighbor left="w" right="b_half 3" />
+		<Neighbor left="w" right="b_i" />
+		<Neighbor left="w" right="b_quarter" />
 	</Neighbors>
 	<Subsets>
 		<Subset name="Large Circles">
-			<Tile name="b_quarter"/>
-			<Tile name="w_quarter"/>
+			<Tile name="b_quarter" />
+			<Tile name="w_quarter" />
 		</Subset>
 		<Subset name="Large Circles and Solid">
-			<Tile name="b_quarter"/>
-			<Tile name="w_quarter"/>
-			<Tile name="b"/>
-			<Tile name="w"/>
+			<Tile name="b_quarter" />
+			<Tile name="w_quarter" />
+			<Tile name="b" />
+			<Tile name="w" />
 		</Subset>
 		<Subset name="No Solid">
-			<Tile name="b_half" symmetry="T"/>
-			<Tile name="b_i" symmetry="I"/>
-			<Tile name="b_quarter" symmetry="L"/>
-			<Tile name="w_half" symmetry="T"/>
-			<Tile name="w_i" symmetry="I"/>
-			<Tile name="w_quarter" symmetry="L"/>
+			<Tile name="b_half" symmetry="T" />
+			<Tile name="b_i" symmetry="I" />
+			<Tile name="b_quarter" symmetry="L" />
+			<Tile name="w_half" symmetry="T" />
+			<Tile name="w_i" symmetry="I" />
+			<Tile name="w_quarter" symmetry="L" />
 		</Subset>
 	</Subsets>
 </TileSet>

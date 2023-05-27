@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="yes"?>
-<xs:schema 
-  id="tileset.symmetry" 
+<xs:schema
+  id="tileset.symmetry"
   targetNamespace="http://yeahcat.cn/wfc/tileset"
   xmlns="http://yeahcat.cn/wfc/tileset"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
-  >
+>
   <xs:simpleType name="TileSymmetry" final="restriction">
     <xs:restriction base="xs:string">
       <xs:enumeration value="X" />

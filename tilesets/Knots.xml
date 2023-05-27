@@ -1,92 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TileSet
-  xmlns="http://yeahcat.cn/wfc/tileset"
+	xmlns="http://yeahcat.cn/wfc/tileset"
 >
 	<Tiles>
-		<Tile name="corner" symmetry="L"/>
-		<Tile name="cross" symmetry="I"/>
-		<Tile name="empty" symmetry="X"/>
-		<Tile name="line" symmetry="I"/>
-		<Tile name="t" symmetry="T"/>
+		<Tile name="corner" symmetry="L" />
+		<Tile name="cross" symmetry="I" />
+		<Tile name="empty" symmetry="X" />
+		<Tile name="line" symmetry="I" />
+		<Tile name="t" symmetry="T" />
 	</Tiles>
 	<Neighbors>
-		<Neighbor left="corner 1" right="empty"/>
-		<Neighbor left="corner" right="cross"/>
-		<Neighbor left="corner" right="cross 1"/>
-		<Neighbor left="corner" right="line"/>
-		<Neighbor left="corner 1" right="line 1"/>
-		<Neighbor left="corner" right="t 2"/>
-		<Neighbor left="corner" right="t 3"/>
-		<Neighbor left="corner" right="t"/>
-		<Neighbor left="corner 1" right="t 1"/>
-		<Neighbor left="corner 1" right="corner 3"/>
-		<Neighbor left="corner 1" right="corner"/>
-		<Neighbor left="corner" right="corner 1"/>
-		<Neighbor left="corner" right="corner 2"/>
-		<Neighbor left="cross" right="cross"/>
-		<Neighbor left="cross" right="cross 1"/>
-		<Neighbor left="cross 1" right="cross 1"/>
-		<Neighbor left="cross" right="line"/>
-		<Neighbor left="cross 1" right="line"/>
-		<Neighbor left="cross" right="t"/>
-		<Neighbor left="cross" right="t 3"/>
-		<Neighbor left="cross 1" right="t"/>
-		<Neighbor left="cross 1" right="t 3"/>
-		<Neighbor left="empty" right="empty"/>
-		<Neighbor left="empty" right="line 1"/>
-		<Neighbor left="empty" right="t 1"/>
-		<Neighbor left="line" right="line"/>
-		<Neighbor left="line 1" right="line 1"/>
-		<Neighbor left="line" right="t"/>
-		<Neighbor left="line 1" right="t 1"/>
-		<Neighbor left="line" right="t 3"/>
-		<Neighbor left="t 1" right="t 3"/>
-		<Neighbor left="t" right="t"/>
-		<Neighbor left="t 2" right="t"/>
-		<Neighbor left="t 1" right="t"/>
-		<Neighbor left="t 3" right="t 1"/>
+		<Neighbor left="corner 1" right="empty" />
+		<Neighbor left="corner" right="cross" />
+		<Neighbor left="corner" right="cross 1" />
+		<Neighbor left="corner" right="line" />
+		<Neighbor left="corner 1" right="line 1" />
+		<Neighbor left="corner" right="t 2" />
+		<Neighbor left="corner" right="t 3" />
+		<Neighbor left="corner" right="t" />
+		<Neighbor left="corner 1" right="t 1" />
+		<Neighbor left="corner 1" right="corner 3" />
+		<Neighbor left="corner 1" right="corner" />
+		<Neighbor left="corner" right="corner 1" />
+		<Neighbor left="corner" right="corner 2" />
+		<Neighbor left="cross" right="cross" />
+		<Neighbor left="cross" right="cross 1" />
+		<Neighbor left="cross 1" right="cross 1" />
+		<Neighbor left="cross" right="line" />
+		<Neighbor left="cross 1" right="line" />
+		<Neighbor left="cross" right="t" />
+		<Neighbor left="cross" right="t 3" />
+		<Neighbor left="cross 1" right="t" />
+		<Neighbor left="cross 1" right="t 3" />
+		<Neighbor left="empty" right="empty" />
+		<Neighbor left="empty" right="line 1" />
+		<Neighbor left="empty" right="t 1" />
+		<Neighbor left="line" right="line" />
+		<Neighbor left="line 1" right="line 1" />
+		<Neighbor left="line" right="t" />
+		<Neighbor left="line 1" right="t 1" />
+		<Neighbor left="line" right="t 3" />
+		<Neighbor left="t 1" right="t 3" />
+		<Neighbor left="t" right="t" />
+		<Neighbor left="t 2" right="t" />
+		<Neighbor left="t 1" right="t" />
+		<Neighbor left="t 3" right="t 1" />
 	</Neighbors>
 	<Subsets>
 		<Subset name="Standard">
-			<Tile name="corner"/>
-			<Tile name="cross"/>
-			<Tile name="empty"/>
-			<Tile name="line"/>
+			<Tile name="corner" />
+			<Tile name="cross" />
+			<Tile name="empty" />
+			<Tile name="line" />
 		</Subset>
 		<Subset name="Dense">
-			<Tile name="corner"/>
-			<Tile name="cross"/>
-			<Tile name="line"/>
+			<Tile name="corner" />
+			<Tile name="cross" />
+			<Tile name="line" />
 		</Subset>
 		<Subset name="Crossless">
-			<Tile name="corner"/>
-			<Tile name="empty"/>
-			<Tile name="line"/>
+			<Tile name="corner" />
+			<Tile name="empty" />
+			<Tile name="line" />
 		</Subset>
 		<Subset name="TE">
-			<Tile name="t"/>
-			<Tile name="empty"/>
+			<Tile name="t" />
+			<Tile name="empty" />
 		</Subset>
 		<Subset name="T">
-			<Tile name="t"/>
+			<Tile name="t" />
 		</Subset>
 		<Subset name="CL">
-			<Tile name="corner"/>
-			<Tile name="line"/>
+			<Tile name="corner" />
+			<Tile name="line" />
 		</Subset>
 		<Subset name="CE">
-			<Tile name="corner"/>
-			<Tile name="empty"/>
+			<Tile name="corner" />
+			<Tile name="empty" />
 		</Subset>
 		<Subset name="C">
-			<Tile name="corner"/>
+			<Tile name="corner" />
 		</Subset>
 		<Subset name="Fabric">
-			<Tile name="cross"/>
-			<Tile name="line"/>
+			<Tile name="cross" />
+			<Tile name="line" />
 		</Subset>
 		<Subset name="Dense Fabric">
-			<Tile name="cross"/>
+			<Tile name="cross" />
 		</Subset>
 	</Subsets>
 </TileSet>

@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TileSet
-  xmlns="http://yeahcat.cn/wfc/tileset"
+	xmlns="http://yeahcat.cn/wfc/tileset"
 >
 	<Tiles>
-		<Tile name="bend" symmetry="L" weight="0.5"/>
-		<Tile name="corner" symmetry="L" weight="0.5"/>
-		<Tile name="corridor" symmetry="I" weight="1.0"/>
-		<Tile name="door" symmetry="T" weight="0.5"/>
-		<Tile name="empty" symmetry="X"/>
-		<Tile name="side" symmetry="T" weight="2.0"/>
-		<Tile name="t" symmetry="T" weight="0.5"/>
-		<Tile name="turn" symmetry="L" weight="0.25"/>
-		<Tile name="wall" symmetry="X"/>
+		<Tile name="bend" symmetry="L" weight="0.5" />
+		<Tile name="corner" symmetry="L" weight="0.5" />
+		<Tile name="corridor" symmetry="I" weight="1.0" />
+		<Tile name="door" symmetry="T" weight="0.5" />
+		<Tile name="empty" symmetry="X" />
+		<Tile name="side" symmetry="T" weight="2.0" />
+		<Tile name="t" symmetry="T" weight="0.5" />
+		<Tile name="turn" symmetry="L" weight="0.25" />
+		<Tile name="wall" symmetry="X" />
 	</Tiles>
 	<Neighbors>
-		<Neighbor left="corner 1" right="corner"/>
-		<Neighbor left="corner 2" right="corner"/>
-		<Neighbor left="corner" right="door"/>
-		<Neighbor left="corner" right="side 2"/>
-		<Neighbor left="corner 1" right="side 1"/>
-		<Neighbor left="corner 1" right="t 1"/>
-		<Neighbor left="corner 1" right="turn"/>
-		<Neighbor left="corner 2" right="turn"/>
-		<Neighbor left="wall" right="corner"/>
-		<Neighbor left="corridor 1" right="corridor 1"/>
-		<Neighbor left="corridor 1" right="door 3"/>
-		<Neighbor left="corridor" right="side 1"/>
-		<Neighbor left="corridor 1" right="t"/>
-		<Neighbor left="corridor 1" right="t 3"/>
-		<Neighbor left="corridor 1" right="turn 1"/>
-		<Neighbor left="corridor" right="wall"/>
-		<Neighbor left="door 1" right="door 3"/>
-		<Neighbor left="door 3" right="empty"/>
-		<Neighbor left="door" right="side 2"/>
-		<Neighbor left="door 1" right="t"/>
-		<Neighbor left="door 1" right="t 3"/>
-		<Neighbor left="door 1" right="turn 1"/>
-		<Neighbor left="empty" right="empty"/>
-		<Neighbor left="empty" right="side 3"/>
-		<Neighbor left="side" right="side"/>
-		<Neighbor left="side 3" right="side 1"/>
-		<Neighbor left="side 3" right="t 1"/>
-		<Neighbor left="side 3" right="turn"/>
-		<Neighbor left="side 3" right="wall"/>
-		<Neighbor left="t" right="t 2"/>
-		<Neighbor left="t" right="turn 1"/>
-		<Neighbor left="t 3" right="wall"/>
-		<Neighbor left="turn" right="turn 2"/>
-		<Neighbor left="turn 1" right="wall"/>
-		<Neighbor left="wall" right="wall"/>
-		<Neighbor left="bend" right="bend 1"/>
-		<Neighbor left="corner" right="bend 2"/>
-		<Neighbor left="door" right="bend 2"/>
-		<Neighbor left="empty" right="bend"/>
-		<Neighbor left="side" right="bend 1"/>
+		<Neighbor left="corner 1" right="corner" />
+		<Neighbor left="corner 2" right="corner" />
+		<Neighbor left="corner" right="door" />
+		<Neighbor left="corner" right="side 2" />
+		<Neighbor left="corner 1" right="side 1" />
+		<Neighbor left="corner 1" right="t 1" />
+		<Neighbor left="corner 1" right="turn" />
+		<Neighbor left="corner 2" right="turn" />
+		<Neighbor left="wall" right="corner" />
+		<Neighbor left="corridor 1" right="corridor 1" />
+		<Neighbor left="corridor 1" right="door 3" />
+		<Neighbor left="corridor" right="side 1" />
+		<Neighbor left="corridor 1" right="t" />
+		<Neighbor left="corridor 1" right="t 3" />
+		<Neighbor left="corridor 1" right="turn 1" />
+		<Neighbor left="corridor" right="wall" />
+		<Neighbor left="door 1" right="door 3" />
+		<Neighbor left="door 3" right="empty" />
+		<Neighbor left="door" right="side 2" />
+		<Neighbor left="door 1" right="t" />
+		<Neighbor left="door 1" right="t 3" />
+		<Neighbor left="door 1" right="turn 1" />
+		<Neighbor left="empty" right="empty" />
+		<Neighbor left="empty" right="side 3" />
+		<Neighbor left="side" right="side" />
+		<Neighbor left="side 3" right="side 1" />
+		<Neighbor left="side 3" right="t 1" />
+		<Neighbor left="side 3" right="turn" />
+		<Neighbor left="side 3" right="wall" />
+		<Neighbor left="t" right="t 2" />
+		<Neighbor left="t" right="turn 1" />
+		<Neighbor left="t 3" right="wall" />
+		<Neighbor left="turn" right="turn 2" />
+		<Neighbor left="turn 1" right="wall" />
+		<Neighbor left="wall" right="wall" />
+		<Neighbor left="bend" right="bend 1" />
+		<Neighbor left="corner" right="bend 2" />
+		<Neighbor left="door" right="bend 2" />
+		<Neighbor left="empty" right="bend" />
+		<Neighbor left="side" right="bend 1" />
 	</Neighbors>
 </TileSet>

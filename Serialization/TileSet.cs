@@ -3,13 +3,17 @@ using System.IO;
 using System.Xml.Serialization;
 using Schema;
 
-namespace Serialization {
-  class TileSetSerializer {
+namespace Serialization
+{
+  class TileSetSerializer
+  {
     private XmlSerializer _serializer;
-    public TileSetSerializer() {
+    public TileSetSerializer()
+    {
       _serializer = new XmlSerializer(typeof(TileSet));
     }
-    public TileSet Deserialize(System.IO.Stream stream) {
+    public TileSet Deserialize(System.IO.Stream stream)
+    {
       return (TileSet)_serializer.Deserialize(stream);
     }
 

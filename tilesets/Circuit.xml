@@ -1,185 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TileSet
-  xmlns="http://yeahcat.cn/wfc/tileset"
+	xmlns="http://yeahcat.cn/wfc/tileset"
 >
 	<Tiles>
-		<Tile name="bridge" symmetry="I" weight="1.0"/>
-		<Tile name="component" symmetry="X" weight="20.0"/>
-		<Tile name="connection" symmetry="T" weight="10.0"/>
-		<Tile name="corner" symmetry="L" weight="10.0"/>
-		<Tile name="substrate" symmetry="X" weight="2.0"/>
-		<Tile name="t" symmetry="T" weight="0.1"/>
-		<Tile name="track" symmetry="I" weight="2.0"/>
-		<Tile name="transition" symmetry="T" weight="0.4"/>
-		<Tile name="turn" symmetry="L" weight="1.0"/>
-		<Tile name="viad" symmetry="I" weight="0.1"/>
-		<Tile name="vias" symmetry="T" weight="0.3"/>
-		<Tile name="wire" symmetry="I" weight="0.5"/>
-		<Tile name="skew" symmetry="L" weight="2.0"/>
-		<Tile name="dskew" symmetry="D" weight="2.0"/>
+		<Tile name="bridge" symmetry="I" weight="1.0" />
+		<Tile name="component" symmetry="X" weight="20.0" />
+		<Tile name="connection" symmetry="T" weight="10.0" />
+		<Tile name="corner" symmetry="L" weight="10.0" />
+		<Tile name="substrate" symmetry="X" weight="2.0" />
+		<Tile name="t" symmetry="T" weight="0.1" />
+		<Tile name="track" symmetry="I" weight="2.0" />
+		<Tile name="transition" symmetry="T" weight="0.4" />
+		<Tile name="turn" symmetry="L" weight="1.0" />
+		<Tile name="viad" symmetry="I" weight="0.1" />
+		<Tile name="vias" symmetry="T" weight="0.3" />
+		<Tile name="wire" symmetry="I" weight="0.5" />
+		<Tile name="skew" symmetry="L" weight="2.0" />
+		<Tile name="dskew" symmetry="D" weight="2.0" />
 	</Tiles>
 	<Neighbors>
-		<Neighbor left="bridge" right="bridge"/>
-		<Neighbor left="bridge 1" right="bridge 1"/>
-		<Neighbor left="bridge 1" right="connection 1"/>
-		<Neighbor left="bridge 1" right="t 2"/>
-		<Neighbor left="bridge 1" right="t 3"/>
-		<Neighbor left="bridge 1" right="track 1"/>
-		<Neighbor left="bridge" right="transition 1"/>
-		<Neighbor left="bridge 1" right="turn 1"/>
-		<Neighbor left="bridge 1" right="viad"/>
-		<Neighbor left="bridge 1" right="vias 1"/>
-		<Neighbor left="bridge" right="wire"/>
-		<Neighbor left="component" right="component"/>
-		<Neighbor left="connection 1" right="component"/>
-		<Neighbor left="connection" right="connection"/>
-		<Neighbor left="connection" right="corner"/>
-		<Neighbor left="t 1" right="connection 1"/>
-		<Neighbor left="t 2" right="connection 1"/>
-		<Neighbor left="track 1" right="connection 1"/>
-		<Neighbor left="turn" right="connection 1"/>
-		<Neighbor left="substrate" right="corner 1"/>
-		<Neighbor left="t 3" right="corner 1"/>
-		<Neighbor left="track" right="corner 1"/>
-		<Neighbor left="transition 2" right="corner 1"/>
-		<Neighbor left="transition" right="corner 1"/>
-		<Neighbor left="turn 1" right="corner 1"/>
-		<Neighbor left="turn 2" right="corner 1"/>
-		<Neighbor left="viad 1" right="corner 1"/>
-		<Neighbor left="vias 1" right="corner 1"/>
-		<Neighbor left="vias 2" right="corner 1"/>
-		<Neighbor left="vias" right="corner 1"/>
-		<Neighbor left="wire 1" right="corner 1"/>
-		<Neighbor left="substrate" right="substrate"/>
-		<Neighbor left="substrate" right="t 1"/>
-		<Neighbor left="substrate" right="track"/>
-		<Neighbor left="substrate" right="transition 2"/>
-		<Neighbor left="substrate" right="turn"/>
-		<Neighbor left="substrate" right="viad 1"/>
-		<Neighbor left="substrate" right="vias 2"/>
-		<Neighbor left="substrate" right="vias 3"/>
-		<Neighbor left="substrate" right="wire 1"/>
-		<Neighbor left="t 1" right="t 3"/>
-		<Neighbor left="t 3" right="t 1"/>
-		<Neighbor left="t 1" right="t 2"/>
-		<Neighbor left="t 2" right="t 2"/>
-		<Neighbor left="t 2" right="t"/>
-		<Neighbor left="t 3" right="track"/>
-		<Neighbor left="t 1" right="track 1"/>
-		<Neighbor left="t 2" right="track 1"/>
-		<Neighbor left="t 1" right="transition 3"/>
-		<Neighbor left="t 3" right="transition 2"/>
-		<Neighbor left="t 2" right="transition 3"/>
-		<Neighbor left="t 3" right="turn"/>
-		<Neighbor left="t 1" right="turn 1"/>
-		<Neighbor left="t 2" right="turn 1"/>
-		<Neighbor left="t 2" right="turn 2"/>
-		<Neighbor left="t 3" right="viad 1"/>
-		<Neighbor left="t 1" right="viad"/>
-		<Neighbor left="t 2" right="viad"/>
-		<Neighbor left="t 2" right="vias 1"/>
-		<Neighbor left="t 1" right="vias 1"/>
-		<Neighbor left="vias 1" right="t 1"/>
-		<Neighbor left="vias 2" right="t 1"/>
-		<Neighbor left="wire 1" right="t 1"/>
-		<Neighbor left="track" right="track"/>
-		<Neighbor left="track 1" right="track 1"/>
-		<Neighbor left="track 1" right="transition 3"/>
-		<Neighbor left="track" right="transition 2"/>
-		<Neighbor left="track" right="turn"/>
-		<Neighbor left="track 1" right="turn 1"/>
-		<Neighbor left="track" right="viad 1"/>
-		<Neighbor left="track 1" right="viad"/>
-		<Neighbor left="track" right="vias 2"/>
-		<Neighbor left="track" right="vias 3"/>
-		<Neighbor left="track 1" right="vias 1"/>
-		<Neighbor left="track" right="wire 1"/>
-		<Neighbor left="transition 2" right="turn"/>
-		<Neighbor left="transition" right="turn"/>
-		<Neighbor left="transition 1" right="turn 1"/>
-		<Neighbor left="transition 2" right="viad 1"/>
-		<Neighbor left="transition 2" right="vias 2"/>
-		<Neighbor left="transition 2" right="vias 3"/>
-		<Neighbor left="transition 2" right="vias"/>
-		<Neighbor left="wire" right="transition 1"/>
-		<Neighbor left="transition 2" right="wire 1"/>
-		<Neighbor left="turn 1" right="turn"/>
-		<Neighbor left="turn 2" right="turn"/>
-		<Neighbor left="turn" right="turn 1"/>
-		<Neighbor left="turn" right="turn 2"/>
-		<Neighbor left="turn 1" right="viad 1"/>
-		<Neighbor left="turn" right="viad"/>
-		<Neighbor left="turn 1" right="vias 2"/>
-		<Neighbor left="turn 1" right="vias 3"/>
-		<Neighbor left="turn 1" right="vias"/>
-		<Neighbor left="turn" right="vias 1"/>
-		<Neighbor left="turn 1" right="wire 1"/>
-		<Neighbor left="viad 1" right="viad 1"/>
-		<Neighbor left="viad 1" right="vias 2"/>
-		<Neighbor left="viad 1" right="vias 3"/>
-		<Neighbor left="viad 1" right="wire 1"/>
-		<Neighbor left="vias 1" right="wire 1"/>
-		<Neighbor left="vias 2" right="wire 1"/>
-		<Neighbor left="vias 1" right="vias 3"/>
-		<Neighbor left="vias 2" right="vias 2"/>
-		<Neighbor left="vias 2" right="vias"/>
-		<Neighbor left="wire" right="wire"/>
-		<Neighbor left="wire 1" right="wire 1"/>
-		<Neighbor left="bridge 1" right="dskew"/>
-		<Neighbor left="connection 3" right="dskew"/>
-		<Neighbor left="dskew" right="dskew"/>
-		<Neighbor left="skew" right="dskew"/>
-		<Neighbor left="t" right="dskew"/>
-		<Neighbor left="t 2" right="dskew"/>
-		<Neighbor left="t 1" right="dskew"/>
-		<Neighbor left="track 1" right="dskew"/>
-		<Neighbor left="transition 1" right="dskew"/>
-		<Neighbor left="turn 3" right="dskew"/>
-		<Neighbor left="viad" right="dskew"/>
-		<Neighbor left="vias 3" right="dskew"/>
-		<Neighbor left="skew" right="bridge 1"/>
-		<Neighbor left="skew" right="connection 1"/>
-		<Neighbor left="corner" right="skew"/>
-		<Neighbor left="corner 3" right="skew"/>
-		<Neighbor left="skew" right="dskew"/>
-		<Neighbor left="skew" right="skew 2"/>
-		<Neighbor left="skew 1" right="skew"/>
-		<Neighbor left="skew 1" right="skew 3"/>
-		<Neighbor left="substrate" right="skew"/>
-		<Neighbor left="t 3" right="skew"/>
-		<Neighbor left="t" right="skew 2"/>
-		<Neighbor left="t 2" right="skew 2"/>
-		<Neighbor left="t 1" right="skew 2"/>
-		<Neighbor left="track" right="skew"/>
-		<Neighbor left="track 1" right="skew 2"/>
-		<Neighbor left="transition" right="skew"/>
-		<Neighbor left="transition 1" right="skew 2"/>
-		<Neighbor left="turn 1" right="skew"/>
-		<Neighbor left="turn 2" right="skew"/>
-		<Neighbor left="turn 3" right="skew 2"/>
-		<Neighbor left="viad 1" right="skew"/>
-		<Neighbor left="viad" right="skew 2"/>
-		<Neighbor left="vias" right="skew"/>
-		<Neighbor left="vias 1" right="skew"/>
-		<Neighbor left="vias 2" right="skew"/>
-		<Neighbor left="vias 3" right="skew 2"/>
-		<Neighbor left="wire 1" right="skew"/>
+		<Neighbor left="bridge" right="bridge" />
+		<Neighbor left="bridge 1" right="bridge 1" />
+		<Neighbor left="bridge 1" right="connection 1" />
+		<Neighbor left="bridge 1" right="t 2" />
+		<Neighbor left="bridge 1" right="t 3" />
+		<Neighbor left="bridge 1" right="track 1" />
+		<Neighbor left="bridge" right="transition 1" />
+		<Neighbor left="bridge 1" right="turn 1" />
+		<Neighbor left="bridge 1" right="viad" />
+		<Neighbor left="bridge 1" right="vias 1" />
+		<Neighbor left="bridge" right="wire" />
+		<Neighbor left="component" right="component" />
+		<Neighbor left="connection 1" right="component" />
+		<Neighbor left="connection" right="connection" />
+		<Neighbor left="connection" right="corner" />
+		<Neighbor left="t 1" right="connection 1" />
+		<Neighbor left="t 2" right="connection 1" />
+		<Neighbor left="track 1" right="connection 1" />
+		<Neighbor left="turn" right="connection 1" />
+		<Neighbor left="substrate" right="corner 1" />
+		<Neighbor left="t 3" right="corner 1" />
+		<Neighbor left="track" right="corner 1" />
+		<Neighbor left="transition 2" right="corner 1" />
+		<Neighbor left="transition" right="corner 1" />
+		<Neighbor left="turn 1" right="corner 1" />
+		<Neighbor left="turn 2" right="corner 1" />
+		<Neighbor left="viad 1" right="corner 1" />
+		<Neighbor left="vias 1" right="corner 1" />
+		<Neighbor left="vias 2" right="corner 1" />
+		<Neighbor left="vias" right="corner 1" />
+		<Neighbor left="wire 1" right="corner 1" />
+		<Neighbor left="substrate" right="substrate" />
+		<Neighbor left="substrate" right="t 1" />
+		<Neighbor left="substrate" right="track" />
+		<Neighbor left="substrate" right="transition 2" />
+		<Neighbor left="substrate" right="turn" />
+		<Neighbor left="substrate" right="viad 1" />
+		<Neighbor left="substrate" right="vias 2" />
+		<Neighbor left="substrate" right="vias 3" />
+		<Neighbor left="substrate" right="wire 1" />
+		<Neighbor left="t 1" right="t 3" />
+		<Neighbor left="t 3" right="t 1" />
+		<Neighbor left="t 1" right="t 2" />
+		<Neighbor left="t 2" right="t 2" />
+		<Neighbor left="t 2" right="t" />
+		<Neighbor left="t 3" right="track" />
+		<Neighbor left="t 1" right="track 1" />
+		<Neighbor left="t 2" right="track 1" />
+		<Neighbor left="t 1" right="transition 3" />
+		<Neighbor left="t 3" right="transition 2" />
+		<Neighbor left="t 2" right="transition 3" />
+		<Neighbor left="t 3" right="turn" />
+		<Neighbor left="t 1" right="turn 1" />
+		<Neighbor left="t 2" right="turn 1" />
+		<Neighbor left="t 2" right="turn 2" />
+		<Neighbor left="t 3" right="viad 1" />
+		<Neighbor left="t 1" right="viad" />
+		<Neighbor left="t 2" right="viad" />
+		<Neighbor left="t 2" right="vias 1" />
+		<Neighbor left="t 1" right="vias 1" />
+		<Neighbor left="vias 1" right="t 1" />
+		<Neighbor left="vias 2" right="t 1" />
+		<Neighbor left="wire 1" right="t 1" />
+		<Neighbor left="track" right="track" />
+		<Neighbor left="track 1" right="track 1" />
+		<Neighbor left="track 1" right="transition 3" />
+		<Neighbor left="track" right="transition 2" />
+		<Neighbor left="track" right="turn" />
+		<Neighbor left="track 1" right="turn 1" />
+		<Neighbor left="track" right="viad 1" />
+		<Neighbor left="track 1" right="viad" />
+		<Neighbor left="track" right="vias 2" />
+		<Neighbor left="track" right="vias 3" />
+		<Neighbor left="track 1" right="vias 1" />
+		<Neighbor left="track" right="wire 1" />
+		<Neighbor left="transition 2" right="turn" />
+		<Neighbor left="transition" right="turn" />
+		<Neighbor left="transition 1" right="turn 1" />
+		<Neighbor left="transition 2" right="viad 1" />
+		<Neighbor left="transition 2" right="vias 2" />
+		<Neighbor left="transition 2" right="vias 3" />
+		<Neighbor left="transition 2" right="vias" />
+		<Neighbor left="wire" right="transition 1" />
+		<Neighbor left="transition 2" right="wire 1" />
+		<Neighbor left="turn 1" right="turn" />
+		<Neighbor left="turn 2" right="turn" />
+		<Neighbor left="turn" right="turn 1" />
+		<Neighbor left="turn" right="turn 2" />
+		<Neighbor left="turn 1" right="viad 1" />
+		<Neighbor left="turn" right="viad" />
+		<Neighbor left="turn 1" right="vias 2" />
+		<Neighbor left="turn 1" right="vias 3" />
+		<Neighbor left="turn 1" right="vias" />
+		<Neighbor left="turn" right="vias 1" />
+		<Neighbor left="turn 1" right="wire 1" />
+		<Neighbor left="viad 1" right="viad 1" />
+		<Neighbor left="viad 1" right="vias 2" />
+		<Neighbor left="viad 1" right="vias 3" />
+		<Neighbor left="viad 1" right="wire 1" />
+		<Neighbor left="vias 1" right="wire 1" />
+		<Neighbor left="vias 2" right="wire 1" />
+		<Neighbor left="vias 1" right="vias 3" />
+		<Neighbor left="vias 2" right="vias 2" />
+		<Neighbor left="vias 2" right="vias" />
+		<Neighbor left="wire" right="wire" />
+		<Neighbor left="wire 1" right="wire 1" />
+		<Neighbor left="bridge 1" right="dskew" />
+		<Neighbor left="connection 3" right="dskew" />
+		<Neighbor left="dskew" right="dskew" />
+		<Neighbor left="skew" right="dskew" />
+		<Neighbor left="t" right="dskew" />
+		<Neighbor left="t 2" right="dskew" />
+		<Neighbor left="t 1" right="dskew" />
+		<Neighbor left="track 1" right="dskew" />
+		<Neighbor left="transition 1" right="dskew" />
+		<Neighbor left="turn 3" right="dskew" />
+		<Neighbor left="viad" right="dskew" />
+		<Neighbor left="vias 3" right="dskew" />
+		<Neighbor left="skew" right="bridge 1" />
+		<Neighbor left="skew" right="connection 1" />
+		<Neighbor left="corner" right="skew" />
+		<Neighbor left="corner 3" right="skew" />
+		<Neighbor left="skew" right="dskew" />
+		<Neighbor left="skew" right="skew 2" />
+		<Neighbor left="skew 1" right="skew" />
+		<Neighbor left="skew 1" right="skew 3" />
+		<Neighbor left="substrate" right="skew" />
+		<Neighbor left="t 3" right="skew" />
+		<Neighbor left="t" right="skew 2" />
+		<Neighbor left="t 2" right="skew 2" />
+		<Neighbor left="t 1" right="skew 2" />
+		<Neighbor left="track" right="skew" />
+		<Neighbor left="track 1" right="skew 2" />
+		<Neighbor left="transition" right="skew" />
+		<Neighbor left="transition 1" right="skew 2" />
+		<Neighbor left="turn 1" right="skew" />
+		<Neighbor left="turn 2" right="skew" />
+		<Neighbor left="turn 3" right="skew 2" />
+		<Neighbor left="viad 1" right="skew" />
+		<Neighbor left="viad" right="skew 2" />
+		<Neighbor left="vias" right="skew" />
+		<Neighbor left="vias 1" right="skew" />
+		<Neighbor left="vias 2" right="skew" />
+		<Neighbor left="vias 3" right="skew 2" />
+		<Neighbor left="wire 1" right="skew" />
 	</Neighbors>
 	<Subsets>
 		<Subset name="Turnless">
-			<Tile name="bridge"/>
-			<Tile name="component"/>
-			<Tile name="connection"/>
-			<Tile name="corner"/>
-			<Tile name="substrate"/>
-			<Tile name="t"/>
-			<Tile name="track"/>
-			<Tile name="transition"/>
-			<Tile name="viad"/>
-			<Tile name="vias"/>
-			<Tile name="wire"/>
-			<Tile name="skew"/>
-			<Tile name="dskew"/>
+			<Tile name="bridge" />
+			<Tile name="component" />
+			<Tile name="connection" />
+			<Tile name="corner" />
+			<Tile name="substrate" />
+			<Tile name="t" />
+			<Tile name="track" />
+			<Tile name="transition" />
+			<Tile name="viad" />
+			<Tile name="vias" />
+			<Tile name="wire" />
+			<Tile name="skew" />
+			<Tile name="dskew" />
 		</Subset>
 	</Subsets>
 </TileSet>

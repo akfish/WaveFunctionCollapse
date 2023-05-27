@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="yes"?>
-<xs:schema 
-  id="heuristic" 
+<xs:schema
+  id="heuristic"
   targetNamespace="http://yeahcat.cn/wfc/models"
   xmlns="http://yeahcat.cn/wfc/models"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
-  >
+>
   <xs:simpleType name="Heuristic" final="restriction">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Entropy" />
