@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema
+  id="pattern"
+  targetNamespace="http://yeahcat.cn/wfc/pattern"
+  xmlns="http://yeahcat.cn/wfc/pattern"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+>
+  <xs:element name="Pattern" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="input" type="xs:string" />
+      <xs:attribute name="N" type="xs:int" default="3" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

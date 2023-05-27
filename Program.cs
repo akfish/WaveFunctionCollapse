@@ -1,11 +1,9 @@
 ﻿// Copyright (C) 2016 Maxim Gumin, The MIT License (MIT)
 
 using System;
-using System.Xml.Linq;
 using System.Diagnostics;
 using Schema;
 using System.Xml.Serialization;
-using System.IO;
 
 static class Program
 {
@@ -39,7 +37,7 @@ static class Program
       if (sample is Overlapping)
       {
         Overlapping o = (Overlapping)sample;
-        model = new OverlappingModel(o.name, o.N, o.size, o.size, o.periodicInput, o.periodic, o.symmetry, o.ground, o.heuristic);
+        model = new OverlappingModel(o.name, o.size, o.size, o.periodicInput, o.periodic, o.symmetry, o.ground, o.heuristic);
       }
       else if (sample is SimpleTiled)
       {

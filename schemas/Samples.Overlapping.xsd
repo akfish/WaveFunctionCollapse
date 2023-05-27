@@ -16,7 +16,6 @@
     <xs:complexType>
       <xs:complexContent>
         <xs:extension base="SampleBase">
-          <xs:attribute name="N" type="xs:int" default="3" />
           <xs:attribute name="symmetry" type="xs:int" default="8" />
           <xs:attribute name="ground" type="xs:boolean" default="false" />
           <xs:attribute name="periodicInput" type="xs:boolean" default="true" />

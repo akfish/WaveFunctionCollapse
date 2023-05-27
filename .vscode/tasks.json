@@ -21,6 +21,7 @@
         "Samples.xsd",
         "Models.xsd",
         "TileSet.xsd",
+        "Pattern.xsd",
         "/c",
         "/n:Schema",
       ],

@@ -3,16 +3,21 @@
 using System;
 using System.Collections.Generic;
 using Schema;
+using Serialization;
 
 class OverlappingModel : Model
 {
   List<byte[]> patterns;
   List<int> colors;
 
-  public OverlappingModel(string name, int N, int width, int height, bool periodicInput, bool periodic, int symmetry, bool ground, Heuristic heuristic)
-      : base(width, height, N, periodic, heuristic)
+  public OverlappingModel(string name, int width, int height, bool periodicInput, bool periodic, int symmetry, bool ground, Heuristic heuristic)
+      : base(width, height, 1, periodic, heuristic)
   {
-    var (bitmap, SX, SY) = BitmapHelper.LoadBitmap($"samples/{name}.png");
+    PatternSerializer serializer = new();
+    Pattern patternInput = serializer.Deserialize($"samples/{name}.xml");
+    N = patternInput.N;
+    var (bitmap, SX, SY) = BitmapHelper.LoadBitmap($"samples/{patternInput.name}.png");
+
     byte[] sample = new byte[bitmap.Length];
     colors = new List<int>();
     for (int i = 0; i < sample.Length; i++)
